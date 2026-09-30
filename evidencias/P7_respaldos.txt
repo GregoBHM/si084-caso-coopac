@@ -1,0 +1,24 @@
+ARCHIVOS DE RESPALDO:
+core_2025-11-12.sql
+core_2025-11-13.sql
+core_2025-11-14.sql
+respaldo.log
+respaldo.sh
+
+ÚLTIMAS LÍNEAS DEL LOG:
+2025-12-27 02:00:02 ERROR pg_dump: could not write to output file: No space left on device
+2025-12-28 02:00:02 ERROR pg_dump: could not write to output file: No space left on device
+2025-12-29 02:00:02 ERROR pg_dump: could not write to output file: No space left on device
+2025-12-30 02:00:02 ERROR pg_dump: could not write to output file: No space left on device
+2025-12-31 02:00:02 ERROR pg_dump: could not write to output file: No space left on device
+
+SCRIPT DE RESPALDO:
+#!/bin/sh
+# Tarea programada del respaldo del core · cron: 0 2 * * *
+# 01/11/2025 · Jefe de Sistemas · "el respaldo tarda mucho; se excluye la tabla más pesada"
+pg_dump -U postgres -d core --exclude-table=desembolsos > /respaldos/core_$(date +%F).sql
+ ultimo_respaldo |   corte    | dias 
+-----------------+------------+------
+ 2025-11-14      | 2025-12-31 |   47
+(1 row)
+

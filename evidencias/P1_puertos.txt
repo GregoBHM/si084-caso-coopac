@@ -1,0 +1,6 @@
+EJECUCIÓN LOCAL (puerto alterno por conflicto con otro proyecto):
+NAME      IMAGE         COMMAND                  SERVICE   CREATED          STATUS                    PORTS
+sr_bd     postgres:16   "docker-entrypoint.s…"   bd        41 seconds ago   Up 40 seconds (healthy)   0.0.0.0:55433->5432/tcp, [::]:55433->5432/tcp
+
+CONFIGURACIÓN ORIGINAL AUDITADA:
+- "55432:5432"

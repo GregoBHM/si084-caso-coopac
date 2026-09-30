@@ -1,0 +1,18 @@
+CREATE DATABASE
+SET
+CREATE TABLE
+COPY 96
+CREATE TABLE
+COPY 118
+           List of relations
+ Schema |   Name    | Type  |  Owner   
+--------+-----------+-------+----------
+ public | empleados | table | postgres
+ public | usuarios  | table | postgres
+(2 rows)
+
+ falta_desembolsos 
+-------------------
+ t
+(1 row)
+

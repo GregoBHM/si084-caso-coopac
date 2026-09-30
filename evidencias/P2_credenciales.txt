@@ -1,0 +1,1 @@
+docker-compose.yml:10:POSTGRES_PASSWORD: [OCULTA]; longitud=10
